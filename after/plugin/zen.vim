@@ -1,4 +1,4 @@
-if dracula#should_abort()
+if zen#should_abort()
   finish
 endif
 
@@ -10,10 +10,9 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
     \ 'hl':      ['fg', 'Search'],
     \ 'fg+':     ['fg', 'Normal'],
     \ 'bg+':     ['bg', 'Normal'],
-    \ 'hl+':     ['fg', 'DraculaOrange'],
-    \ 'info':    ['fg', 'DraculaPurple'],
-    \ 'border':  ['fg', 'Ignore'],
-    \ 'prompt':  ['fg', 'DraculaGreen'],
+    \ 'hl+':     ['fg', 'ZenOrange'],
+    \ 'info':    ['fg', 'ZenLightCyan'],
+    \ 'prompt':  ['fg', 'ZenGreen'],
     \ 'pointer': ['fg', 'Exception'],
     \ 'marker':  ['fg', 'Keyword'],
     \ 'spinner': ['fg', 'Label'],
@@ -23,13 +22,13 @@ endif
 "}}}
 " ALE: {{{
 if exists('g:ale_enabled')
-  hi! link ALEError              DraculaErrorLine
-  hi! link ALEWarning            DraculaWarnLine
-  hi! link ALEInfo               DraculaInfoLine
+  hi! link ALEError              ZenErrorLine
+  hi! link ALEWarning            ZenWarnLine
+  hi! link ALEInfo               ZenInfoLine
 
-  hi! link ALEErrorSign          DraculaRed
-  hi! link ALEWarningSign        DraculaOrange
-  hi! link ALEInfoSign           DraculaCyan
+  hi! link ALEErrorSign          ZenRed
+  hi! link ALEWarningSign        ZenOrange
+  hi! link ALEInfoSign           ZenCyan
 
   hi! link ALEVirtualTextError   Comment
   hi! link ALEVirtualTextWarning Comment

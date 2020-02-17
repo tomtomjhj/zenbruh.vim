@@ -1,9 +1,9 @@
-if dracula#should_abort('html')
+if zen#should_abort('html')
     finish
 endif
 
-hi! link htmlTag         DraculaFg
-hi! link htmlArg         DraculaGreenItalic
-hi! link htmlTitle       DraculaFg
-hi! link htmlH1          DraculaFg
-hi! link htmlSpecialChar DraculaPurple
+hi! link htmlTag         ZenFg
+hi! link htmlArg         ZenGreenItalic
+hi! link htmlTitle       ZenFg
+hi! link htmlH1          ZenFg
+hi! link htmlSpecialChar ZenPurple

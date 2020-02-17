@@ -1,8 +1,8 @@
-if dracula#should_abort('xml')
+if zen#should_abort('xml')
     finish
 endif
 
-hi! link xmlAttrib  DraculaGreenItalic
+hi! link xmlAttrib  ZenGreenItalic
 hi! link xmlEqual   Operator
 hi! link xmlTag     Delimiter
 hi! link xmlTagName Statement

@@ -1,5 +1,5 @@
-*dracula.txt*           For Vim version 8               Last change: 2018 May 08
-*dracula* *vim-dracula*
+*zen.txt*           For Vim version 8               Last change: 2018 May 08
+*zen*
 
                     |\                          ,,       ~
                      \\          _              ||   _   ~
@@ -11,58 +11,58 @@
                              A dark theme for vim
 
 ==============================================================================
-CONTENTS                                                      *dracula-contents*
+CONTENTS                                                      *zen-contents*
 
-    1. Intro ................................................... |dracula-intro|
-    2. Usage ................................................... |dracula-usage|
-    3. Configuration ................................... |dracula-configuration|
-    4. Personal Customization .......................... |dracula-customization|
-    5. License ............................................... |dracula-license|
-    6. Bugs ..................................................... |dracula-bugs|
-    7. Contributing ..................................... |dracula-contributing|
-    8. Credits ............................................... |dracula-credits|
+    1. Intro ....................................................... |zen-intro|
+    2. Usage ....................................................... |zen-usage|
+    3. Configuration ....................................... |zen-configuration|
+    4. Personal Customization .............................. |zen-customization|
+    5. License ................................................... |zen-license|
+    6. Bugs ......................................................... |zen-bugs|
+    7. Contributing ......................................... |zen-contributing|
+    8. Credits ................................................... |zen-credits|
 
 ==============================================================================
-INTRO                                                            *dracula-intro*
+INTRO                                                            *zen-intro*
 
-Dracula is a vim plugin that contains
+Zen is a vim plugin that contains
 
     - a dark colorscheme for vim
     - a similarly-themed colorscheme for the vim plugin airline
         (https://github.com/vim-airline/vim-airline)
 
 ==============================================================================
-USAGE                                                            *dracula-usage*
+USAGE                                                            *zen-usage*
 
 Install it with your favorite plugin manager, and then >
-    colorscheme dracula
+    colorscheme zen
 in your vimrc! See also |dracula_runtimepath|.
 
 If you are an airline user, you can also do >
-    let g:airline_theme='dracula'
-to have airline use Dracula.
+    let g:airline_theme='zen'
+to have airline use Zen.
 
                                                            *dracula_runtimepath*
 
-Note that dracula must be in your 'runtimepath' for this command to work
+Note that zen must be in your 'runtimepath' for this command to work
 properly: Version 2.0 introduced autoload functionality for part of the
 plugin, which doesn't work without 'runtimepath' properly set.
 
 For users of Vim 8's |packages| feature, it suffices to put >
-    packadd! dracula
-    colorscheme dracula
+    packadd! zen
+    colorscheme zen
 in your vimrc. {name} Should be replaced by the directory you put the code in.
-For example, if you use ~/.vim/pack/themes/start/my-dracula-theme, you would
+For example, if you use ~/.vim/pack/themes/start/my-zen-theme, you would
 do >
-    packadd! my-dracula-theme
+    packadd! my-zen-theme
 
 For users of other plugin managers, consult your documentation
-to make sure you put dracula on the 'runtimepath' before loading it.
+to make sure you put zen on the 'runtimepath' before loading it.
 
 ==============================================================================
-CONFIGURATION                                            *dracula-configuration*
+CONFIGURATION                                            *zen-configuration*
 
-There are a couple of variables used by Dracula that you might want to adjust
+There are a couple of variables used by Zen that you might want to adjust
 depending on your terminal's capabilities.
 
 Default values are shown.
@@ -95,9 +95,9 @@ Include background fill colors >
    let g:dracula_colorterm = 1
 
 ==============================================================================
-CUSTOMIZATION                                            *dracula-customization*
+CUSTOMIZATION                                            *zen-customization*
 
-Like all colorschemes, Dracula is easy to customize with |autocmd|. Make use
+Like all colorschemes, Zen is easy to customize with |autocmd|. Make use
 of the |ColorScheme| event as in the following examples.
 
 It would be a good idea to put all of your personal changes in an |augroup|,
@@ -109,10 +109,10 @@ which you can do with the following code: >
 >
 
 - To add underline styling to |hl-CursorLine|, you can use the following: >
-    autocmd ColorScheme dracula hi CursorLine cterm=underline term=underline
+    autocmd ColorScheme zen hi CursorLine cterm=underline term=underline
 <
 ==============================================================================
-LICENSE                                                        *dracula-license*
+LICENSE                                                        *zen-license*
 
 MIT License. Copyright © 2016 Dracula Theme.
 Full text available at

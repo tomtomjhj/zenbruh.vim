@@ -1,15 +1,15 @@
-if dracula#should_abort('css')
+if zen#should_abort('css')
     finish
 endif
 
 hi! link cssAttrComma         Delimiter
-hi! link cssAttrRegion        DraculaPink
-hi! link cssAttributeSelector DraculaGreenItalic
+hi! link cssAttrRegion        ZenPink
+hi! link cssAttributeSelector ZenGreenItalic
 hi! link cssBraces            Delimiter
 hi! link cssFunctionComma     Delimiter
-hi! link cssNoise             DraculaPink
-hi! link cssProp              DraculaCyan
-hi! link cssPseudoClass       DraculaPink
-hi! link cssPseudoClassId     DraculaGreenItalic
-hi! link cssUnitDecorators    DraculaPink
-hi! link cssVendor            DraculaGreenItalic
+hi! link cssNoise             ZenPink
+hi! link cssProp              ZenCyan
+hi! link cssPseudoClass       ZenPink
+hi! link cssPseudoClassId     ZenGreenItalic
+hi! link cssUnitDecorators    ZenPink
+hi! link cssVendor            ZenGreenItalic

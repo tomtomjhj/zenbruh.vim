@@ -1,12 +1,12 @@
-if dracula#should_abort('gitcommit')
+if zen#should_abort('gitcommit')
     finish
 endif
 
 " The following two are misnomers. Colors are correct.
-hi! link diffFile    DraculaGreen
-hi! link diffNewFile DraculaRed
+hi! link diffFile    ZenGreen
+hi! link diffNewFile ZenRed
 
-hi! link diffAdded   DraculaGreen
-hi! link diffLine    DraculaCyanItalic
-hi! link diffRemoved DraculaRed
+hi! link diffAdded   ZenGreen
+hi! link diffLine    ZenCyanItalic
+hi! link diffRemoved ZenRed
 
