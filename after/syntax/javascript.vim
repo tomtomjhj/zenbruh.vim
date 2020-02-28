@@ -1,4 +1,4 @@
-if zen#should_abort('javascript')
+if zenbruh#should_abort('javascript')
     finish
 endif
 
@@ -11,11 +11,11 @@ hi! link javaScriptFunction Keyword
 
 hi! link jsArrowFunction           Operator
 hi! link jsClassMethodType         Keyword
-hi! link jsDestructuringAssignment ZenOrangeItalic
-hi! link jsDocParam                ZenOrangeItalic
+hi! link jsDestructuringAssignment ZenbruhOrangeItalic
+hi! link jsDocParam                ZenbruhOrangeItalic
 hi! link jsDocTags                 Keyword
 hi! link jsDocType                 Type
-hi! link jsDocTypeBrackets         ZenCyan
+hi! link jsDocTypeBrackets         ZenbruhCyan
 hi! link jsFuncArgOperator         Operator
 hi! link jsFunction                Keyword
 hi! link jsTemplateBraces          Special

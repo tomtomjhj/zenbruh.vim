@@ -1,8 +1,8 @@
-if zen#should_abort('bash', 'ksh', 'posix', 'sh')
+if zenbruh#should_abort('bash', 'ksh', 'posix', 'sh')
     finish
 endif
 
 hi! link shCommandSub NONE
-hi! link shEscape     ZenRed
+hi! link shEscape     ZenbruhRed
 hi! link shParen      NONE
 hi! link shParenError NONE

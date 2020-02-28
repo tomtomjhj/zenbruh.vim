@@ -1,11 +1,11 @@
-if zen#should_abort('python')
+if zenbruh#should_abort('python')
     finish
 endif
 
 hi! link pythonBuiltinObj    Type
 hi! link pythonBuiltinObject Type
 hi! link pythonBuiltinType   Type
-hi! link pythonClassVar      ZenPurpleItalic
+hi! link pythonClassVar      ZenbruhPurpleItalic
 hi! link pythonExClass       Type
 hi! link pythonNone          Type
 hi! link pythonRun           Comment

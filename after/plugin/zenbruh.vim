@@ -1,4 +1,4 @@
-if zen#should_abort()
+if zenbruh#should_abort()
   finish
 endif
 
@@ -10,9 +10,9 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
     \ 'hl':      ['fg', 'Search'],
     \ 'fg+':     ['fg', 'Normal'],
     \ 'bg+':     ['bg', 'Normal'],
-    \ 'hl+':     ['fg', 'ZenOrange'],
-    \ 'info':    ['fg', 'ZenLightCyan'],
-    \ 'prompt':  ['fg', 'ZenGreen'],
+    \ 'hl+':     ['fg', 'ZenbruhOrange'],
+    \ 'info':    ['fg', 'ZenbruhLightCyan'],
+    \ 'prompt':  ['fg', 'ZenbruhGreen'],
     \ 'pointer': ['fg', 'Exception'],
     \ 'marker':  ['fg', 'Keyword'],
     \ 'spinner': ['fg', 'Label'],

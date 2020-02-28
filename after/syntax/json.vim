@@ -1,6 +1,6 @@
-if zen#should_abort('json')
+if zenbruh#should_abort('json')
     finish
 endif
 
-hi! link jsonKeyword      ZenCyan
-hi! link jsonKeywordMatch ZenPink
+hi! link jsonKeyword      ZenbruhCyan
+hi! link jsonKeywordMatch ZenbruhPink

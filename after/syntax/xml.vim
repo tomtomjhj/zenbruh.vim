@@ -1,8 +1,8 @@
-if zen#should_abort('xml')
+if zenbruh#should_abort('xml')
     finish
 endif
 
-hi! link xmlAttrib  ZenGreenItalic
+hi! link xmlAttrib  ZenbruhGreenItalic
 hi! link xmlEqual   Operator
 hi! link xmlTag     Delimiter
 hi! link xmlTagName Statement

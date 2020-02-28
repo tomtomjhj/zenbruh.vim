@@ -1,7 +1,7 @@
-if zen#should_abort('ocaml')
+if zenbruh#should_abort('ocaml')
     finish
 endif
 
 hi! link ocamlModule  Type
 hi! link ocamlModPath Normal
-hi! link ocamlLabel   ZenOrangeItalic
+hi! link ocamlLabel   ZenbruhOrangeItalic

@@ -1,4 +1,4 @@
-if zen#should_abort('typescript', 'typescriptreact')
+if zenbruh#should_abort('typescript', 'typescriptreact')
     finish
 endif
 
@@ -7,7 +7,7 @@ endif
 hi! link typescriptAliasDeclaration       Type
 hi! link typescriptArrayMethod            Function
 hi! link typescriptArrowFunc              Operator
-hi! link typescriptArrowFuncArg           ZenOrangeItalic
+hi! link typescriptArrowFuncArg           ZenbruhOrangeItalic
 hi! link typescriptAssign                 Operator
 hi! link typescriptBOMWindowProp          Constant
 hi! link typescriptBinaryOp               Operator
@@ -15,22 +15,22 @@ hi! link typescriptBraces                 Delimiter
 hi! link typescriptCall                   typescriptArrowFuncArg
 hi! link typescriptClassHeritage          Type
 hi! link typescriptClassName              Type
-hi! link typescriptDateMethod             ZenCyan
+hi! link typescriptDateMethod             ZenbruhCyan
 hi! link typescriptDateStaticMethod       Function
-hi! link typescriptDecorator              ZenGreenItalic
+hi! link typescriptDecorator              ZenbruhGreenItalic
 hi! link typescriptDefaultParam           Operator
-hi! link typescriptES6SetMethod           ZenCyan
+hi! link typescriptES6SetMethod           ZenbruhCyan
 hi! link typescriptEndColons              Delimiter
 hi! link typescriptEnum                   Type
 hi! link typescriptEnumKeyword            Keyword
 hi! link typescriptFuncComma              Delimiter
 hi! link typescriptFuncKeyword            Keyword
-hi! link typescriptFuncType               ZenOrangeItalic
+hi! link typescriptFuncType               ZenbruhOrangeItalic
 hi! link typescriptFuncTypeArrow          Operator
 hi! link typescriptGlobal                 Type
-hi! link typescriptGlobalMethod           ZenCyan
+hi! link typescriptGlobalMethod           ZenbruhCyan
 hi! link typescriptGlobalObjects          Type
-hi! link typescriptIdentifier             ZenPurpleItalic
+hi! link typescriptIdentifier             ZenbruhPurpleItalic
 hi! link typescriptInterfaceHeritage      Type
 hi! link typescriptInterfaceName          Type
 hi! link typescriptInterpolationDelimiter Keyword
@@ -42,14 +42,14 @@ hi! link typescriptObjectColon            Special
 hi! link typescriptObjectLabel            Identifier
 hi! link typescriptObjectSpread           Operator
 hi! link typescriptOperator               Operator
-hi! link typescriptParamImpl              ZenOrangeItalic
+hi! link typescriptParamImpl              ZenbruhOrangeItalic
 hi! link typescriptParens                 Delimiter
 hi! link typescriptPredefinedType         Type
 hi! link typescriptRestOrSpread           Operator
 hi! link typescriptTernaryOp              Operator
 hi! link typescriptTypeAnnotation         Special
 hi! link typescriptTypeCast               Operator
-hi! link typescriptTypeParameter          ZenOrangeItalic
+hi! link typescriptTypeParameter          ZenbruhOrangeItalic
 hi! link typescriptTypeReference          Type
 hi! link typescriptUnaryOp                Operator
 hi! link typescriptVariable               Keyword

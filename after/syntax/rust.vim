@@ -1,4 +1,4 @@
-if zen#should_abort('rust')
+if zenbruh#should_abort('rust')
     finish
 endif
 

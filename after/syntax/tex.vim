@@ -1,6 +1,6 @@
-if zen#should_abort('tex')
+if zenbruh#should_abort('tex')
     finish
 endif
 
-hi! link texRefZone       ZenBgDarker
-hi! link texTitle         ZenFgBold
+hi! link texRefZone       ZenbruhBgDarker
+hi! link texTitle         ZenbruhFgBold

@@ -1,4 +1,4 @@
-if zen#should_abort('vim')
+if zenbruh#should_abort('vim')
     finish
 endif
 

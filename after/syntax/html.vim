@@ -1,9 +1,9 @@
-if zen#should_abort('html')
+if zenbruh#should_abort('html')
     finish
 endif
 
-hi! link htmlTag         ZenFg
-hi! link htmlArg         ZenGreenItalic
-hi! link htmlTitle       ZenFg
-hi! link htmlH1          ZenFg
-hi! link htmlSpecialChar ZenPurple
+hi! link htmlTag         ZenbruhFg
+hi! link htmlArg         ZenbruhGreenItalic
+hi! link htmlTitle       ZenbruhFg
+hi! link htmlH1          ZenbruhFg
+hi! link htmlSpecialChar ZenbruhPurple

@@ -1,5 +1,5 @@
-*zen.txt*           For Vim version 8               Last change: 2018 May 08
-*zen*
+*zenbruh.txt*           For Vim version 8               Last change: 2018 May 08
+*zenbruh*
 
                     |\                          ,,       ~
                      \\          _              ||   _   ~
@@ -11,58 +11,58 @@
                              A dark theme for vim
 
 ==============================================================================
-CONTENTS                                                      *zen-contents*
+CONTENTS                                                      *zenbruh-contents*
 
-    1. Intro ....................................................... |zen-intro|
-    2. Usage ....................................................... |zen-usage|
-    3. Configuration ....................................... |zen-configuration|
-    4. Personal Customization .............................. |zen-customization|
-    5. License ................................................... |zen-license|
-    6. Bugs ......................................................... |zen-bugs|
-    7. Contributing ......................................... |zen-contributing|
-    8. Credits ................................................... |zen-credits|
+    1. Intro ................................................... |zenbruh-intro|
+    2. Usage ................................................... |zenbruh-usage|
+    3. Configuration ................................... |zenbruh-configuration|
+    4. Personal Customization .......................... |zenbruh-customization|
+    5. License ............................................... |zenbruh-license|
+    6. Bugs ..................................................... |zenbruh-bugs|
+    7. Contributing ..................................... |zenbruh-contributing|
+    8. Credits ............................................... |zenbruh-credits|
 
 ==============================================================================
-INTRO                                                            *zen-intro*
+INTRO                                                            *zenbruh-intro*
 
-Zen is a vim plugin that contains
+Zenbruh is a vim plugin that contains
 
     - a dark colorscheme for vim
     - a similarly-themed colorscheme for the vim plugin airline
         (https://github.com/vim-airline/vim-airline)
 
 ==============================================================================
-USAGE                                                            *zen-usage*
+USAGE                                                            *zenbruh-usage*
 
 Install it with your favorite plugin manager, and then >
-    colorscheme zen
+    colorscheme zenbruh
 in your vimrc! See also |dracula_runtimepath|.
 
 If you are an airline user, you can also do >
-    let g:airline_theme='zen'
-to have airline use Zen.
+    let g:airline_theme='zenbruh'
+to have airline use Zenbruh.
 
                                                            *dracula_runtimepath*
 
-Note that zen must be in your 'runtimepath' for this command to work
+Note that zenbruh must be in your 'runtimepath' for this command to work
 properly: Version 2.0 introduced autoload functionality for part of the
 plugin, which doesn't work without 'runtimepath' properly set.
 
 For users of Vim 8's |packages| feature, it suffices to put >
-    packadd! zen
-    colorscheme zen
+    packadd! zenbruh
+    colorscheme zenbruh
 in your vimrc. {name} Should be replaced by the directory you put the code in.
-For example, if you use ~/.vim/pack/themes/start/my-zen-theme, you would
+For example, if you use ~/.vim/pack/themes/start/my-zenbruh-theme, you would
 do >
-    packadd! my-zen-theme
+    packadd! my-zenbruh-theme
 
 For users of other plugin managers, consult your documentation
-to make sure you put zen on the 'runtimepath' before loading it.
+to make sure you put zenbruh on the 'runtimepath' before loading it.
 
 ==============================================================================
-CONFIGURATION                                            *zen-configuration*
+CONFIGURATION                                            *zenbruh-configuration*
 
-There are a couple of variables used by Zen that you might want to adjust
+There are a couple of variables used by Zenbruh that you might want to adjust
 depending on your terminal's capabilities.
 
 Default values are shown.
@@ -95,9 +95,9 @@ Include background fill colors >
    let g:dracula_colorterm = 1
 
 ==============================================================================
-CUSTOMIZATION                                            *zen-customization*
+CUSTOMIZATION                                            *zenbruh-customization*
 
-Like all colorschemes, Zen is easy to customize with |autocmd|. Make use
+Like all colorschemes, Zenbruh is easy to customize with |autocmd|. Make use
 of the |ColorScheme| event as in the following examples.
 
 It would be a good idea to put all of your personal changes in an |augroup|,
@@ -109,10 +109,10 @@ which you can do with the following code: >
 >
 
 - To add underline styling to |hl-CursorLine|, you can use the following: >
-    autocmd ColorScheme zen hi CursorLine cterm=underline term=underline
+    autocmd ColorScheme zenbruh hi CursorLine cterm=underline term=underline
 <
 ==============================================================================
-LICENSE                                                        *zen-license*
+LICENSE                                                        *zenbruh-license*
 
 MIT License. Copyright © 2016 Dracula Theme.
 Full text available at
