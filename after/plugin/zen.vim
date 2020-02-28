@@ -20,25 +20,5 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
     \}
 endif
 "}}}
-" ALE: {{{
-if exists('g:ale_enabled')
-  hi! link ALEError              ZenErrorLine
-  hi! link ALEWarning            ZenWarnLine
-  hi! link ALEInfo               ZenInfoLine
-
-  hi! link ALEErrorSign          ZenRed
-  hi! link ALEWarningSign        ZenOrange
-  hi! link ALEInfoSign           ZenCyan
-
-  hi! link ALEVirtualTextError   Comment
-  hi! link ALEVirtualTextWarning Comment
-endif
-" }}}
-" CtrlP: {{{
-if exists('g:loaded_ctrlp')
-  hi! link CtrlPMatch     IncSearch
-  hi! link CtrlPBufferHid Normal
-endif
-" }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:

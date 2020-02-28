@@ -59,7 +59,7 @@ let s:redish    = g:zen#palette.redish
 let s:yellow    = g:zen#palette.yellow
 let s:yellowish = g:zen#palette.yellowish
 
-let s:none      = ['NONE', 'NONE']
+let s:none      = 'NONE'
 
 " if has('nvim')
 "   for s:i in range(16)
@@ -106,25 +106,24 @@ endif
 
 function! s:h(scope, fg, ...) " bg, attr_list, special
   let l:fg = copy(a:fg)
-  let l:bg = get(a:, 1, ['NONE', 'NONE'])
+  let l:bg = get(a:, 1, 'NONE')
 
   let l:attr_list = filter(get(a:, 2, ['NONE']), 'type(v:val) == 1')
   let l:attrs = len(l:attr_list) > 0 ? join(l:attr_list, ',') : 'NONE'
 
   " Falls back to coloring foreground group on terminals because
   " nearly all do not support undercurl
-  let l:special = get(a:, 3, ['NONE', 'NONE'])
-  if l:special[0] !=# 'NONE' && l:fg[0] ==# 'NONE' && !has('gui_running')
-    let l:fg[0] = l:special[0]
-    let l:fg[1] = l:special[1]
+  let l:special = get(a:, 3, 'NONE')
+  if l:special !=# 'NONE' && l:fg ==# 'NONE' && !has('gui_running')
+    let l:fg = l:special
   endif
 
   let l:hl_string = [
         \ 'highlight', a:scope,
-        \ 'guifg=' . l:fg[0], 'ctermfg=' . l:fg[1],
-        \ 'guibg=' . l:bg[0], 'ctermbg=' . l:bg[1],
+        \ 'ctermfg=' . l:fg,
+        \ 'ctermbg=' . l:bg,
         \ 'gui=' . l:attrs, 'cterm=' . l:attrs,
-        \ 'guisp=' . l:special[0],
+        \ 'guisp=' . l:special,
         \]
 
   execute join(l:hl_string, ' ')
@@ -216,18 +215,21 @@ hi! link ColorColumn  ZenBgDark
 hi! link CursorColumn CursorLine
 hi! link CursorLineNr ZenYellow
 hi! link DiffAdd      ZenDiffAdd
-hi! link DiffAdded    DiffAdd
 hi! link DiffChange   ZenDiffChange
 hi! link DiffDelete   ZenDiffDelete
-hi! link DiffRemoved  DiffDelete
 hi! link DiffText     ZenDiffText
+hi! link diffFile     ZenGreen
+hi! link diffNewFile  ZenRed
+hi! link diffAdded    ZenGreen
+hi! link diffLine     ZenCyanItalic
+hi! link diffRemoved  ZenRed
 hi! link Directory    ZenPurpleBold
 hi! link ErrorMsg     ZenRedInverse
 hi! link FoldColumn   ZenSubtle
 hi! link Folded       ZenBoundary
 hi! link IncSearch    ZenOrangeInverse
 " hi! link LineNr       ZenComment
-hi LineNr guifg=#9fafaf  ctermfg=248 
+hi LineNr ctermfg=248
 hi! link MoreMsg      ZenFgBold
 hi! link NonText      ZenSubtle
 hi! link Pmenu        ZenBgDark
@@ -275,7 +277,7 @@ hi! link String ZenRedish
 hi! link Character ZenRedish
 hi! link Number ZenPurple
 hi! link Boolean ZenPurple
-hi! link Float ZenPurple 
+hi! link Float ZenPurple
 
 hi! link Identifier ZenSpecial
 hi! link Function ZenGreen
