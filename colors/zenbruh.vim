@@ -182,7 +182,7 @@ call s:h('StatusLineNC', s:none, s:bglight)
 call s:h('StatusLineTerm', s:none, s:bglighter, ['bold'])
 call s:h('StatusLineTermNC', s:none, s:bglight)
 call s:h('WildMenu', s:bg, s:purple, ['bold'])
-call s:h('CursorLine', s:none, s:subtle)
+call s:h('CursorLine', s:none, s:bglight)
 
 hi! link ColorColumn  ZenbruhBgDark
 hi! link CursorColumn CursorLine
