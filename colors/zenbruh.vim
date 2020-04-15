@@ -177,6 +177,7 @@ set background=dark
 
 " Required as some plugins will overwrite
 call s:h('Normal', s:fg, s:bg)
+call s:h('NormalFloat', s:none, s:bglighter)
 call s:h('StatusLine', s:none, s:bglighter, ['bold'])
 call s:h('StatusLineNC', s:none, s:bglight)
 call s:h('StatusLineTerm', s:none, s:bglighter, ['bold'])
