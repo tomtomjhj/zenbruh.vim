@@ -8,7 +8,7 @@
 " @author Trevor Heins <@heinst>
 " @author Éverton Ribeiro <nuxlli@gmail.com>
 " @author Derek Sifford <dereksifford@gmail.com>
-" @author Zenbruho Rocha <hi@zenbruhorocha.com>
+" @author Zeno Rocha <hi@zenorocha.com>
 scriptencoding utf8
 " }}}
 
@@ -59,7 +59,7 @@ let s:redish    = g:zenbruh#palette.redish
 let s:yellow    = g:zenbruh#palette.yellow
 let s:yellowish = g:zenbruh#palette.yellowish
 
-let s:none      = 'NONE'
+let s:none      = ['NONE', 'NONE']
 
 " if has('nvim')
 "   for s:i in range(16)
@@ -79,24 +79,25 @@ let s:none      = 'NONE'
 
 function! s:h(scope, fg, ...) " bg, attr_list, special
   let l:fg = copy(a:fg)
-  let l:bg = get(a:, 1, 'NONE')
+  let l:bg = get(a:, 1, ['NONE', 'NONE'])
 
   let l:attr_list = filter(get(a:, 2, ['NONE']), 'type(v:val) == 1')
   let l:attrs = len(l:attr_list) > 0 ? join(l:attr_list, ',') : 'NONE'
 
   " Falls back to coloring foreground group on terminals because
   " nearly all do not support undercurl
-  let l:special = get(a:, 3, 'NONE')
-  if l:special !=# 'NONE' && l:fg ==# 'NONE' && !has('gui_running')
-    let l:fg = l:special
+  let l:special = get(a:, 3, ['NONE', 'NONE'])
+  if l:special[0] !=# 'NONE' && l:fg[0] ==# 'NONE' && !has('gui_running')
+    let l:fg[0] = l:special[0]
+    let l:fg[1] = l:special[1]
   endif
 
   let l:hl_string = [
         \ 'highlight', a:scope,
-        \ 'ctermfg=' . l:fg,
-        \ 'ctermbg=' . l:bg,
+        \ 'guifg=' . l:fg[0], 'ctermfg=' . l:fg[1],
+        \ 'guibg=' . l:bg[0], 'ctermbg=' . l:bg[1],
         \ 'gui=' . l:attrs, 'cterm=' . l:attrs,
-        \ 'guisp=' . l:special,
+        \ 'guisp=' . l:special[0],
         \]
 
   execute join(l:hl_string, ' ')
@@ -202,8 +203,7 @@ hi! link ErrorMsg     ZenbruhRedInverse
 hi! link FoldColumn   ZenbruhSubtle
 hi! link Folded       ZenbruhBoundary
 hi! link IncSearch    ZenbruhOrangeInverse
-" hi! link LineNr       ZenbruhComment
-hi LineNr ctermfg=248
+hi! link LineNr       ZenbruhFgDark
 hi! link MoreMsg      ZenbruhFgBold
 hi! link NonText      ZenbruhSubtle
 hi! link Pmenu        ZenbruhBgDark

@@ -1,35 +1,35 @@
 " Palette: {{{
 
 let g:zenbruh#palette           = {}
-let g:zenbruh#palette.fg        = 255
-let g:zenbruh#palette.fgdarkish = 252
-let g:zenbruh#palette.fgdark    = 250
+let g:zenbruh#palette.fg        = ['#eeeeee', 255]
+let g:zenbruh#palette.fgdarkish = ['#d0d0d0', 252]
+let g:zenbruh#palette.fgdark    = ['#bcbcbc', 250]
 
-let g:zenbruh#palette.bglighter = 236
-let g:zenbruh#palette.bglight   = 235
-let g:zenbruh#palette.bg        = 234
-let g:zenbruh#palette.bgdark    = 233
-let g:zenbruh#palette.bgdarker  = 233
+let g:zenbruh#palette.bglighter = ['#303030', 236]
+let g:zenbruh#palette.bglight   = ['#262626', 235]
+let g:zenbruh#palette.bg        = ['#1c1c1c', 234]
+let g:zenbruh#palette.bgdark    = ['#121212', 233]
+let g:zenbruh#palette.bgdarker  = ['#121212', 233]
 
-let g:zenbruh#palette.comment   = 151
-let g:zenbruh#palette.selection = 239
-let g:zenbruh#palette.subtle    = 238
-let g:zenbruh#palette.special   = 224
+let g:zenbruh#palette.comment   = ['#afd7af', 151]
+let g:zenbruh#palette.selection = ['#4e4e4e', 239]
+let g:zenbruh#palette.subtle    = ['#444444', 238]
+let g:zenbruh#palette.special   = ['#ffd7d7', 224]
 
-let g:zenbruh#palette.white     =  15
-let g:zenbruh#palette.black     =   0
-let g:zenbruh#palette.cyan      = 116
-let g:zenbruh#palette.lightcyan = 152
-let g:zenbruh#palette.green     = 149
-let g:zenbruh#palette.deepskyblue = 23
-let g:zenbruh#palette.orange    = 215
-let g:zenbruh#palette.mediumpurple = 60
-let g:zenbruh#palette.pink      = 218
-let g:zenbruh#palette.purple    = 183
-let g:zenbruh#palette.red       = 203
-let g:zenbruh#palette.redish    = 174
-let g:zenbruh#palette.yellow    = 228
-let g:zenbruh#palette.yellowish = 223
+let g:zenbruh#palette.white     = ['#ffffff',  15]
+let g:zenbruh#palette.black     = ['#000000',   0]
+let g:zenbruh#palette.cyan      = ['#87d7d7', 116]
+let g:zenbruh#palette.lightcyan = ['#afd7d7', 152]
+let g:zenbruh#palette.green     = ['#afd75f', 149]
+let g:zenbruh#palette.deepskyblue = ['#005f5f', 23]
+let g:zenbruh#palette.orange    = ['#ffaf5f', 215]
+let g:zenbruh#palette.mediumpurple = ['#5f5f87', 60]
+let g:zenbruh#palette.pink      = ['#ffafd7', 218]
+let g:zenbruh#palette.purple    = ['#d7afff', 183]
+let g:zenbruh#palette.red       = ['#ff5f5f', 203]
+let g:zenbruh#palette.redish    = ['#d78787', 174]
+let g:zenbruh#palette.yellow    = ['#ffff87', 228]
+let g:zenbruh#palette.yellowish = ['#ffd7af', 223]
 
 "
 " ANSI
