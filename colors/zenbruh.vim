@@ -159,7 +159,8 @@ call s:h('ZenbruhWarnLine', s:none, s:none, ['undercurl'], s:orange)
 call s:h('ZenbruhInfoLine', s:none, s:none, ['undercurl'], s:cyan)
 
 call s:h('ZenbruhTodo', s:pink, s:none, ['bold', 'inverse'])
-hi! ZenbruhSearch cterm=reverse,bold gui=reverse,bold
+call s:h('ZenbruhSearch', s:none, s:subtle, ['bold', 'underline'])
+call s:h('ZenbruhIncSearch', s:none, s:none, ['bold', 'underline', 'inverse'])
 call s:h('ZenbruhBoundary', s:fgdarkish, s:bgdark)
 call s:h('ZenbruhLink', s:cyan, s:none, ['underline'])
 
@@ -202,7 +203,7 @@ hi! link Directory    ZenbruhPurpleBold
 hi! link ErrorMsg     ZenbruhRedInverse
 hi! link FoldColumn   ZenbruhSubtle
 hi! link Folded       ZenbruhBoundary
-hi! link IncSearch    ZenbruhOrangeInverse
+hi! link IncSearch    ZenbruhIncSearch
 hi! link LineNr       ZenbruhFgDark
 hi! link MoreMsg      ZenbruhFgBold
 hi! link NonText      ZenbruhSubtle

@@ -12,7 +12,7 @@ let g:zenbruh#palette.bgdark    = ['#121212', 233]
 let g:zenbruh#palette.bgdarker  = ['#121212', 233]
 
 let g:zenbruh#palette.comment   = ['#afd7af', 151]
-let g:zenbruh#palette.selection = ['#4e4e4e', 239]
+let g:zenbruh#palette.selection = ['#626262', 241]
 let g:zenbruh#palette.subtle    = ['#444444', 238]
 let g:zenbruh#palette.special   = ['#ffd7d7', 224]
 
