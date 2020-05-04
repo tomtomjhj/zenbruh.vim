@@ -228,7 +228,7 @@ hi! link WarningMsg   ZenbruhOrangeInverse
 
 " Required as some plugins will overwrite
 call s:h('MatchParen', s:white, s:black, ['bold', 'underline'])
-call s:h('Conceal', s:special, s:bg)
+call s:h('Conceal', s:special, s:none)
 
 " Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
 if has('nvim')
