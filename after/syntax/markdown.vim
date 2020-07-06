@@ -4,6 +4,10 @@ endif
 
 if b:current_syntax ==# 'mkd'
 " plasticboy/vim-markdown {{{1
+  hi! link htmlTag        ZenbruhFg
+  hi! link htmlArg        ZenbruhGreenItalic
+  hi! link htmlTitle      ZenbruhFg
+  hi! link htmlSpecialChar ZenbruhPurple
   hi! link htmlBold       ZenbruhFgBold
   hi! link htmlBoldItalic ZenbruhFgBoldItalic
   hi! link htmlH1         ZenbruhGreenBold
