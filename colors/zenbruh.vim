@@ -244,7 +244,7 @@ hi! link Todo ZenbruhTodo
 hi! link Error ZenbruhError
 hi! link SpellBad ZenbruhErrorLine
 hi! link SpellLocal ZenbruhWarnLine
-hi! link SpellCap ZenbruhInfoLine
+hi! link SpellCap ZenbruhWarnLine
 hi! link SpellRare ZenbruhInfoLine
 
 hi! link Constant ZenbruhLightCyan
