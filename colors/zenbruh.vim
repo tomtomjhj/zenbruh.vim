@@ -124,6 +124,7 @@ call s:h('ZenbruhCommentBold', s:comment, s:none, ['bold'])
 call s:h('ZenbruhSelection', s:none, s:selection)
 
 call s:h('ZenbruhSubtle', s:subtle)
+call s:h('ZenbruhNonText', s:selection)
 
 call s:h('ZenbruhCyan', s:cyan)
 call s:h('ZenbruhCyanItalic', s:cyan, s:none, ['italic'])
@@ -206,7 +207,7 @@ hi! link Folded       ZenbruhBoundary
 hi! link IncSearch    ZenbruhIncSearch
 hi! link LineNr       ZenbruhFgDark
 hi! link MoreMsg      ZenbruhFgBold
-hi! link NonText      ZenbruhSubtle
+hi! link NonText      ZenbruhNonText
 hi! link Pmenu        ZenbruhBgDark
 hi! link PmenuSbar    ZenbruhBgDark
 hi! link PmenuSel     ZenbruhSelection
