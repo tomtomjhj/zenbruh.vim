@@ -288,5 +288,29 @@ hi! link helpExample ZenbruhGreen
 hi! link helpBacktick Special
 
 "}}}
+" nvim-treesitter: {{{
+" TODO: highlighting overwraps? e.g.
+" * `Box::new(asdf)` Box: TSNamespace + TSType + TSConstant → cool
+" * `Type::Constant` Constant: TSType + TSConstant → bad
+" * `#[structopt(name = "asdf")]` "adsf": TSKeyword + TSString → very bad
+" NOTE: rust lifetime is Label
+hi! link TSConstant Constant
+hi! link TSConstBuiltin Constant
+" NOTE: nvim-treesitter doc is wrong
+" hi! link TSConstMacro Define
+
+hi! link TSFuncBuiltin Function
+hi! link TSMethod Function
+" NOTE: rust uses TSField for both struct def and field access
+hi! link TSField TSNone
+hi! link TSProperty TSNone
+hi! link TSConstructor Constant
+" hi! link TSAnnotation PreProc
+" hi! link TSAttribute PreProc
+hi! link TSNamespace TSNone
+
+hi! link TSVariableBuiltin Constant
+
+" }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
