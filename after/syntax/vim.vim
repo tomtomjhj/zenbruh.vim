@@ -4,6 +4,7 @@ endif
 
 hi! link vimAutoCmdSfxList     Type
 hi! link vimAutoEventList      Type
+hi! link vimCommentTitle       Title
 hi! link vimEnvVar             Constant
 hi! link vimFunction           Function
 hi! link vimHiBang             Keyword
