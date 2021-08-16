@@ -246,7 +246,7 @@ if has('nvim')
   hi! link LspDiagnosticsUnderlineInformation ZenbruhInfoLine
   hi! link LspDiagnosticsUnderlineWarning ZenbruhWarnLine
 else
-  hi! link SpecialKey ZenbruhPink
+  hi! link SpecialKey ZenbruhNonText
 endif
 
 hi! link Comment ZenbruhComment
