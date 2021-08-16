@@ -1,4 +1,4 @@
-if zenbruh#should_abort('typescript', 'typescriptreact')
+if zenbruh#should_abort('typescript', 'typescriptreact', 'typescript.tsx')
     finish
 endif
 
